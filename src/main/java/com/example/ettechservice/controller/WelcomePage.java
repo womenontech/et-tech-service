@@ -9,8 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/welcome")
 public class WelcomePage {
 
-   @PostMapping("/hello")
-   public String hello(){
-        return "Hello World";
+   @PostMapping("/clients")
+   public String[] hello(){
+        String[] clients = {"Shaye", "Bae"};
+       return clients;
     }
 }
